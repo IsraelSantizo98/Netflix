@@ -13,6 +13,12 @@ body{
     height: 100vh;
     position: relative;
 }
+h3{
+    color: #fff;
+}
+.espaciador{
+    margin: 30px 0;
+}
 .contenedor{
     width: 100%;
     margin: auto;
@@ -63,16 +69,70 @@ header .header-buscador a span{
 /*--Main--*/
 .main{
     height: 100vh;
+    width: 100vw;
 }
 .main .main-video{
     width: 100%;
     height: 90vh;
-    position: absolute;
-    top: 0;
-    left: 0;
     overflow: hidden;
 }
 .main .main-video video{
     min-width: 100%;
     min-height: 100%;
+}
+/*--Lista Carousel--*/
+.lista{
+    position: relative;
+    max-width: 80vw;
+}
+.flecha-anterior,
+.flecha-siguiente{
+    position: absolute;
+    /*para poder modificar el alto y el ancho*/
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    /*por el tamaño del alto del boton*/
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #fff;
+    opacity: 20%;
+}
+.flecha-anterior:hover,
+.flecha-siguiente:hover{
+    opacity: 100%;
+}
+.flecha-anterior{
+    left: -30px;
+}
+.flecha-siguiente{
+    right: -30px;
+}
+.lista-indicadores .glider-dot:hover{
+    opacity: 0.5;
+}
+.lista-indicadores .glider-dot.active{
+    opacity: 1;
+}
+.lista-carousel{
+    overflow: hidden;
+}
+.lista-item{
+    text-align: center;
+}
+.lista-item img{
+    height: 200px;
+    width: 100%;
+}
+.lista-indicadores .glider-dot{
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    opacity: .2;
+    border-radius: 0;
 }
