@@ -136,3 +136,9 @@ header .header-buscador a span{
     opacity: .2;
     border-radius: 0;
 }
+/*--Card de recomandacion--*/
+.lista-recomendacion img{
+    height: 500px;
+    width: auto;
+    margin: 0;
+}
